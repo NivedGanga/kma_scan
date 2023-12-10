@@ -1,0 +1,4 @@
+enum CheckInType {
+  checkIn,
+  foodCheck,
+}
