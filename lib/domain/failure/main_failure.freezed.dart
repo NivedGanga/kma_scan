@@ -20,24 +20,21 @@ mixin _$MainFailure {
   TResult when<TResult extends Object?>({
     required TResult Function() clientFailure,
     required TResult Function() serverFailure,
-    required TResult Function(String message) authFailure,
-    required TResult Function() otherFailure,
+    required TResult Function(String message) otherFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? clientFailure,
     TResult? Function()? serverFailure,
-    TResult? Function(String message)? authFailure,
-    TResult? Function()? otherFailure,
+    TResult? Function(String message)? otherFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? clientFailure,
     TResult Function()? serverFailure,
-    TResult Function(String message)? authFailure,
-    TResult Function()? otherFailure,
+    TResult Function(String message)? otherFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -45,7 +42,6 @@ mixin _$MainFailure {
   TResult map<TResult extends Object?>({
     required TResult Function(_ClientFailure value) clientFailure,
     required TResult Function(_ServerFailure value) serverFailure,
-    required TResult Function(AuthFailure value) authFailure,
     required TResult Function(OtherFailure value) otherFailure,
   }) =>
       throw _privateConstructorUsedError;
@@ -53,7 +49,6 @@ mixin _$MainFailure {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_ClientFailure value)? clientFailure,
     TResult? Function(_ServerFailure value)? serverFailure,
-    TResult? Function(AuthFailure value)? authFailure,
     TResult? Function(OtherFailure value)? otherFailure,
   }) =>
       throw _privateConstructorUsedError;
@@ -61,7 +56,6 @@ mixin _$MainFailure {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ClientFailure value)? clientFailure,
     TResult Function(_ServerFailure value)? serverFailure,
-    TResult Function(AuthFailure value)? authFailure,
     TResult Function(OtherFailure value)? otherFailure,
     required TResult orElse(),
   }) =>
@@ -126,8 +120,7 @@ class _$ClientFailureImpl implements _ClientFailure {
   TResult when<TResult extends Object?>({
     required TResult Function() clientFailure,
     required TResult Function() serverFailure,
-    required TResult Function(String message) authFailure,
-    required TResult Function() otherFailure,
+    required TResult Function(String message) otherFailure,
   }) {
     return clientFailure();
   }
@@ -137,8 +130,7 @@ class _$ClientFailureImpl implements _ClientFailure {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? clientFailure,
     TResult? Function()? serverFailure,
-    TResult? Function(String message)? authFailure,
-    TResult? Function()? otherFailure,
+    TResult? Function(String message)? otherFailure,
   }) {
     return clientFailure?.call();
   }
@@ -148,8 +140,7 @@ class _$ClientFailureImpl implements _ClientFailure {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? clientFailure,
     TResult Function()? serverFailure,
-    TResult Function(String message)? authFailure,
-    TResult Function()? otherFailure,
+    TResult Function(String message)? otherFailure,
     required TResult orElse(),
   }) {
     if (clientFailure != null) {
@@ -163,7 +154,6 @@ class _$ClientFailureImpl implements _ClientFailure {
   TResult map<TResult extends Object?>({
     required TResult Function(_ClientFailure value) clientFailure,
     required TResult Function(_ServerFailure value) serverFailure,
-    required TResult Function(AuthFailure value) authFailure,
     required TResult Function(OtherFailure value) otherFailure,
   }) {
     return clientFailure(this);
@@ -174,7 +164,6 @@ class _$ClientFailureImpl implements _ClientFailure {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_ClientFailure value)? clientFailure,
     TResult? Function(_ServerFailure value)? serverFailure,
-    TResult? Function(AuthFailure value)? authFailure,
     TResult? Function(OtherFailure value)? otherFailure,
   }) {
     return clientFailure?.call(this);
@@ -185,7 +174,6 @@ class _$ClientFailureImpl implements _ClientFailure {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ClientFailure value)? clientFailure,
     TResult Function(_ServerFailure value)? serverFailure,
-    TResult Function(AuthFailure value)? authFailure,
     TResult Function(OtherFailure value)? otherFailure,
     required TResult orElse(),
   }) {
@@ -240,8 +228,7 @@ class _$ServerFailureImpl implements _ServerFailure {
   TResult when<TResult extends Object?>({
     required TResult Function() clientFailure,
     required TResult Function() serverFailure,
-    required TResult Function(String message) authFailure,
-    required TResult Function() otherFailure,
+    required TResult Function(String message) otherFailure,
   }) {
     return serverFailure();
   }
@@ -251,8 +238,7 @@ class _$ServerFailureImpl implements _ServerFailure {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? clientFailure,
     TResult? Function()? serverFailure,
-    TResult? Function(String message)? authFailure,
-    TResult? Function()? otherFailure,
+    TResult? Function(String message)? otherFailure,
   }) {
     return serverFailure?.call();
   }
@@ -262,8 +248,7 @@ class _$ServerFailureImpl implements _ServerFailure {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? clientFailure,
     TResult Function()? serverFailure,
-    TResult Function(String message)? authFailure,
-    TResult Function()? otherFailure,
+    TResult Function(String message)? otherFailure,
     required TResult orElse(),
   }) {
     if (serverFailure != null) {
@@ -277,7 +262,6 @@ class _$ServerFailureImpl implements _ServerFailure {
   TResult map<TResult extends Object?>({
     required TResult Function(_ClientFailure value) clientFailure,
     required TResult Function(_ServerFailure value) serverFailure,
-    required TResult Function(AuthFailure value) authFailure,
     required TResult Function(OtherFailure value) otherFailure,
   }) {
     return serverFailure(this);
@@ -288,7 +272,6 @@ class _$ServerFailureImpl implements _ServerFailure {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_ClientFailure value)? clientFailure,
     TResult? Function(_ServerFailure value)? serverFailure,
-    TResult? Function(AuthFailure value)? authFailure,
     TResult? Function(OtherFailure value)? otherFailure,
   }) {
     return serverFailure?.call(this);
@@ -299,7 +282,6 @@ class _$ServerFailureImpl implements _ServerFailure {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ClientFailure value)? clientFailure,
     TResult Function(_ServerFailure value)? serverFailure,
-    TResult Function(AuthFailure value)? authFailure,
     TResult Function(OtherFailure value)? otherFailure,
     required TResult orElse(),
   }) {
@@ -315,20 +297,20 @@ abstract class _ServerFailure implements MainFailure {
 }
 
 /// @nodoc
-abstract class _$$AuthFailureImplCopyWith<$Res> {
-  factory _$$AuthFailureImplCopyWith(
-          _$AuthFailureImpl value, $Res Function(_$AuthFailureImpl) then) =
-      __$$AuthFailureImplCopyWithImpl<$Res>;
+abstract class _$$OtherFailureImplCopyWith<$Res> {
+  factory _$$OtherFailureImplCopyWith(
+          _$OtherFailureImpl value, $Res Function(_$OtherFailureImpl) then) =
+      __$$OtherFailureImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String message});
 }
 
 /// @nodoc
-class __$$AuthFailureImplCopyWithImpl<$Res>
-    extends _$MainFailureCopyWithImpl<$Res, _$AuthFailureImpl>
-    implements _$$AuthFailureImplCopyWith<$Res> {
-  __$$AuthFailureImplCopyWithImpl(
-      _$AuthFailureImpl _value, $Res Function(_$AuthFailureImpl) _then)
+class __$$OtherFailureImplCopyWithImpl<$Res>
+    extends _$MainFailureCopyWithImpl<$Res, _$OtherFailureImpl>
+    implements _$$OtherFailureImplCopyWith<$Res> {
+  __$$OtherFailureImplCopyWithImpl(
+      _$OtherFailureImpl _value, $Res Function(_$OtherFailureImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -336,7 +318,7 @@ class __$$AuthFailureImplCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$AuthFailureImpl(
+    return _then(_$OtherFailureImpl(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -347,22 +329,22 @@ class __$$AuthFailureImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AuthFailureImpl implements AuthFailure {
-  const _$AuthFailureImpl(this.message);
+class _$OtherFailureImpl implements OtherFailure {
+  const _$OtherFailureImpl(this.message);
 
   @override
   final String message;
 
   @override
   String toString() {
-    return 'MainFailure.authFailure(message: $message)';
+    return 'MainFailure.otherFailure(message: $message)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AuthFailureImpl &&
+            other is _$OtherFailureImpl &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -372,18 +354,17 @@ class _$AuthFailureImpl implements AuthFailure {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AuthFailureImplCopyWith<_$AuthFailureImpl> get copyWith =>
-      __$$AuthFailureImplCopyWithImpl<_$AuthFailureImpl>(this, _$identity);
+  _$$OtherFailureImplCopyWith<_$OtherFailureImpl> get copyWith =>
+      __$$OtherFailureImplCopyWithImpl<_$OtherFailureImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() clientFailure,
     required TResult Function() serverFailure,
-    required TResult Function(String message) authFailure,
-    required TResult Function() otherFailure,
+    required TResult Function(String message) otherFailure,
   }) {
-    return authFailure(message);
+    return otherFailure(message);
   }
 
   @override
@@ -391,10 +372,9 @@ class _$AuthFailureImpl implements AuthFailure {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? clientFailure,
     TResult? Function()? serverFailure,
-    TResult? Function(String message)? authFailure,
-    TResult? Function()? otherFailure,
+    TResult? Function(String message)? otherFailure,
   }) {
-    return authFailure?.call(message);
+    return otherFailure?.call(message);
   }
 
   @override
@@ -402,131 +382,11 @@ class _$AuthFailureImpl implements AuthFailure {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? clientFailure,
     TResult Function()? serverFailure,
-    TResult Function(String message)? authFailure,
-    TResult Function()? otherFailure,
-    required TResult orElse(),
-  }) {
-    if (authFailure != null) {
-      return authFailure(message);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_ClientFailure value) clientFailure,
-    required TResult Function(_ServerFailure value) serverFailure,
-    required TResult Function(AuthFailure value) authFailure,
-    required TResult Function(OtherFailure value) otherFailure,
-  }) {
-    return authFailure(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ClientFailure value)? clientFailure,
-    TResult? Function(_ServerFailure value)? serverFailure,
-    TResult? Function(AuthFailure value)? authFailure,
-    TResult? Function(OtherFailure value)? otherFailure,
-  }) {
-    return authFailure?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ClientFailure value)? clientFailure,
-    TResult Function(_ServerFailure value)? serverFailure,
-    TResult Function(AuthFailure value)? authFailure,
-    TResult Function(OtherFailure value)? otherFailure,
-    required TResult orElse(),
-  }) {
-    if (authFailure != null) {
-      return authFailure(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class AuthFailure implements MainFailure {
-  const factory AuthFailure(final String message) = _$AuthFailureImpl;
-
-  String get message;
-  @JsonKey(ignore: true)
-  _$$AuthFailureImplCopyWith<_$AuthFailureImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$OtherFailureImplCopyWith<$Res> {
-  factory _$$OtherFailureImplCopyWith(
-          _$OtherFailureImpl value, $Res Function(_$OtherFailureImpl) then) =
-      __$$OtherFailureImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$OtherFailureImplCopyWithImpl<$Res>
-    extends _$MainFailureCopyWithImpl<$Res, _$OtherFailureImpl>
-    implements _$$OtherFailureImplCopyWith<$Res> {
-  __$$OtherFailureImplCopyWithImpl(
-      _$OtherFailureImpl _value, $Res Function(_$OtherFailureImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$OtherFailureImpl implements OtherFailure {
-  const _$OtherFailureImpl();
-
-  @override
-  String toString() {
-    return 'MainFailure.otherFailure()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OtherFailureImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() clientFailure,
-    required TResult Function() serverFailure,
-    required TResult Function(String message) authFailure,
-    required TResult Function() otherFailure,
-  }) {
-    return otherFailure();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? clientFailure,
-    TResult? Function()? serverFailure,
-    TResult? Function(String message)? authFailure,
-    TResult? Function()? otherFailure,
-  }) {
-    return otherFailure?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? clientFailure,
-    TResult Function()? serverFailure,
-    TResult Function(String message)? authFailure,
-    TResult Function()? otherFailure,
+    TResult Function(String message)? otherFailure,
     required TResult orElse(),
   }) {
     if (otherFailure != null) {
-      return otherFailure();
+      return otherFailure(message);
     }
     return orElse();
   }
@@ -536,7 +396,6 @@ class _$OtherFailureImpl implements OtherFailure {
   TResult map<TResult extends Object?>({
     required TResult Function(_ClientFailure value) clientFailure,
     required TResult Function(_ServerFailure value) serverFailure,
-    required TResult Function(AuthFailure value) authFailure,
     required TResult Function(OtherFailure value) otherFailure,
   }) {
     return otherFailure(this);
@@ -547,7 +406,6 @@ class _$OtherFailureImpl implements OtherFailure {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_ClientFailure value)? clientFailure,
     TResult? Function(_ServerFailure value)? serverFailure,
-    TResult? Function(AuthFailure value)? authFailure,
     TResult? Function(OtherFailure value)? otherFailure,
   }) {
     return otherFailure?.call(this);
@@ -558,7 +416,6 @@ class _$OtherFailureImpl implements OtherFailure {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ClientFailure value)? clientFailure,
     TResult Function(_ServerFailure value)? serverFailure,
-    TResult Function(AuthFailure value)? authFailure,
     TResult Function(OtherFailure value)? otherFailure,
     required TResult orElse(),
   }) {
@@ -570,5 +427,10 @@ class _$OtherFailureImpl implements OtherFailure {
 }
 
 abstract class OtherFailure implements MainFailure {
-  const factory OtherFailure() = _$OtherFailureImpl;
+  const factory OtherFailure(final String message) = _$OtherFailureImpl;
+
+  String get message;
+  @JsonKey(ignore: true)
+  _$$OtherFailureImplCopyWith<_$OtherFailureImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

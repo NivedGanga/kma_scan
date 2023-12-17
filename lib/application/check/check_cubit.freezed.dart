@@ -19,6 +19,7 @@ mixin _$CheckState {
   bool get isLoading => throw _privateConstructorUsedError;
   Option<Either<MainFailure, void>> get isSuccessorFailrue =>
       throw _privateConstructorUsedError;
+  CheckedInModel? get checkedInModel => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CheckStateCopyWith<CheckState> get copyWith =>
@@ -32,7 +33,9 @@ abstract class $CheckStateCopyWith<$Res> {
       _$CheckStateCopyWithImpl<$Res, CheckState>;
   @useResult
   $Res call(
-      {bool isLoading, Option<Either<MainFailure, void>> isSuccessorFailrue});
+      {bool isLoading,
+      Option<Either<MainFailure, void>> isSuccessorFailrue,
+      CheckedInModel? checkedInModel});
 }
 
 /// @nodoc
@@ -50,6 +53,7 @@ class _$CheckStateCopyWithImpl<$Res, $Val extends CheckState>
   $Res call({
     Object? isLoading = null,
     Object? isSuccessorFailrue = null,
+    Object? checkedInModel = freezed,
   }) {
     return _then(_value.copyWith(
       isLoading: null == isLoading
@@ -60,6 +64,10 @@ class _$CheckStateCopyWithImpl<$Res, $Val extends CheckState>
           ? _value.isSuccessorFailrue
           : isSuccessorFailrue // ignore: cast_nullable_to_non_nullable
               as Option<Either<MainFailure, void>>,
+      checkedInModel: freezed == checkedInModel
+          ? _value.checkedInModel
+          : checkedInModel // ignore: cast_nullable_to_non_nullable
+              as CheckedInModel?,
     ) as $Val);
   }
 }
@@ -73,7 +81,9 @@ abstract class _$$InitialImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {bool isLoading, Option<Either<MainFailure, void>> isSuccessorFailrue});
+      {bool isLoading,
+      Option<Either<MainFailure, void>> isSuccessorFailrue,
+      CheckedInModel? checkedInModel});
 }
 
 /// @nodoc
@@ -89,6 +99,7 @@ class __$$InitialImplCopyWithImpl<$Res>
   $Res call({
     Object? isLoading = null,
     Object? isSuccessorFailrue = null,
+    Object? checkedInModel = freezed,
   }) {
     return _then(_$InitialImpl(
       isLoading: null == isLoading
@@ -99,6 +110,10 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value.isSuccessorFailrue
           : isSuccessorFailrue // ignore: cast_nullable_to_non_nullable
               as Option<Either<MainFailure, void>>,
+      checkedInModel: freezed == checkedInModel
+          ? _value.checkedInModel
+          : checkedInModel // ignore: cast_nullable_to_non_nullable
+              as CheckedInModel?,
     ));
   }
 }
@@ -107,16 +122,20 @@ class __$$InitialImplCopyWithImpl<$Res>
 
 class _$InitialImpl implements _Initial {
   const _$InitialImpl(
-      {required this.isLoading, required this.isSuccessorFailrue});
+      {required this.isLoading,
+      required this.isSuccessorFailrue,
+      required this.checkedInModel});
 
   @override
   final bool isLoading;
   @override
   final Option<Either<MainFailure, void>> isSuccessorFailrue;
+  @override
+  final CheckedInModel? checkedInModel;
 
   @override
   String toString() {
-    return 'CheckState(isLoading: $isLoading, isSuccessorFailrue: $isSuccessorFailrue)';
+    return 'CheckState(isLoading: $isLoading, isSuccessorFailrue: $isSuccessorFailrue, checkedInModel: $checkedInModel)';
   }
 
   @override
@@ -127,11 +146,14 @@ class _$InitialImpl implements _Initial {
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.isSuccessorFailrue, isSuccessorFailrue) ||
-                other.isSuccessorFailrue == isSuccessorFailrue));
+                other.isSuccessorFailrue == isSuccessorFailrue) &&
+            (identical(other.checkedInModel, checkedInModel) ||
+                other.checkedInModel == checkedInModel));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, isLoading, isSuccessorFailrue);
+  int get hashCode =>
+      Object.hash(runtimeType, isLoading, isSuccessorFailrue, checkedInModel);
 
   @JsonKey(ignore: true)
   @override
@@ -143,13 +165,15 @@ class _$InitialImpl implements _Initial {
 abstract class _Initial implements CheckState {
   const factory _Initial(
       {required final bool isLoading,
-      required final Option<Either<MainFailure, void>>
-          isSuccessorFailrue}) = _$InitialImpl;
+      required final Option<Either<MainFailure, void>> isSuccessorFailrue,
+      required final CheckedInModel? checkedInModel}) = _$InitialImpl;
 
   @override
   bool get isLoading;
   @override
   Option<Either<MainFailure, void>> get isSuccessorFailrue;
+  @override
+  CheckedInModel? get checkedInModel;
   @override
   @JsonKey(ignore: true)
   _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>

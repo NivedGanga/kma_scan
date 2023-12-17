@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kma_reg/application/check/check_cubit.dart';
+import 'package:kma_reg/application/count/count_cubit.dart';
 import 'package:kma_reg/domain/di/injectable.dart';
 import 'package:kma_reg/presentation/home/home_screen.dart';
 
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
           listeners: [
             BlocProvider<CheckCubit>(
               create: (context) => getIt<CheckCubit>(),
+            ),
+            BlocProvider<CountCubit>(
+              create: (context) => getIt<CountCubit>(),
             ),
           ],
           child: MaterialApp(

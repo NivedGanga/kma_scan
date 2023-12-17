@@ -3,7 +3,7 @@ import 'package:camera/camera.dart';
 class CameraRepo {
   CameraRepo._internal();
   static CameraRepo instance = CameraRepo._internal();
-  factory CameraRepo() {
+  factory CameraRepo( ) {
     return instance;
   }
   CameraDescription? _camera;

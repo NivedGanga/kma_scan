@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:kma_reg/domain/api_calls/models/check_model.dart';
+import 'package:kma_reg/domain/api_calls/models/checked_in_model.dart';
 import 'package:kma_reg/presentation/common_widgets/qr_bottom_sheet.dart';
 import 'package:kma_reg/presentation/core/color.dart';
 import 'package:kma_reg/presentation/core/constants.dart';
@@ -52,16 +54,11 @@ class HomeScreen extends StatelessWidget {
               HomeButton(
                 name: "Check-in",
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => QrScanScreen(),));
-                },
-              ),
-              kHeight15,
-              HomeButton(
-                name: "Food Coupon",
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => QrScanScreen()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => QrScanScreen(),
+                      ));
                 },
               ),
               kHeight15,
@@ -70,7 +67,6 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => StatusScreen()));
-                  //  _showModal(context);
                 },
               ),
             ],
@@ -79,18 +75,4 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-_showModal(BuildContext context) {
-  Future<void> future = showModalBottomSheet<void>(
-    backgroundColor: Color.fromARGB(255, 249, 252, 255),
-    context: context,
-    isScrollControlled: true,
-    builder: (BuildContext context) {
-      return QrBottomSheet();
-    },
-  );
-  future.then((void value) {
-    print('modal closed');
-  });
 }
