@@ -19,7 +19,7 @@ mixin _$CheckState {
   bool get isLoading => throw _privateConstructorUsedError;
   Option<Either<MainFailure, void>> get isSuccessorFailrue =>
       throw _privateConstructorUsedError;
-  CheckedInModel? get checkedInModel => throw _privateConstructorUsedError;
+  UpdateCountModel? get updateCountModel => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CheckStateCopyWith<CheckState> get copyWith =>
@@ -35,7 +35,7 @@ abstract class $CheckStateCopyWith<$Res> {
   $Res call(
       {bool isLoading,
       Option<Either<MainFailure, void>> isSuccessorFailrue,
-      CheckedInModel? checkedInModel});
+      UpdateCountModel? updateCountModel});
 }
 
 /// @nodoc
@@ -53,7 +53,7 @@ class _$CheckStateCopyWithImpl<$Res, $Val extends CheckState>
   $Res call({
     Object? isLoading = null,
     Object? isSuccessorFailrue = null,
-    Object? checkedInModel = freezed,
+    Object? updateCountModel = freezed,
   }) {
     return _then(_value.copyWith(
       isLoading: null == isLoading
@@ -64,10 +64,10 @@ class _$CheckStateCopyWithImpl<$Res, $Val extends CheckState>
           ? _value.isSuccessorFailrue
           : isSuccessorFailrue // ignore: cast_nullable_to_non_nullable
               as Option<Either<MainFailure, void>>,
-      checkedInModel: freezed == checkedInModel
-          ? _value.checkedInModel
-          : checkedInModel // ignore: cast_nullable_to_non_nullable
-              as CheckedInModel?,
+      updateCountModel: freezed == updateCountModel
+          ? _value.updateCountModel
+          : updateCountModel // ignore: cast_nullable_to_non_nullable
+              as UpdateCountModel?,
     ) as $Val);
   }
 }
@@ -83,7 +83,7 @@ abstract class _$$InitialImplCopyWith<$Res>
   $Res call(
       {bool isLoading,
       Option<Either<MainFailure, void>> isSuccessorFailrue,
-      CheckedInModel? checkedInModel});
+      UpdateCountModel? updateCountModel});
 }
 
 /// @nodoc
@@ -99,7 +99,7 @@ class __$$InitialImplCopyWithImpl<$Res>
   $Res call({
     Object? isLoading = null,
     Object? isSuccessorFailrue = null,
-    Object? checkedInModel = freezed,
+    Object? updateCountModel = freezed,
   }) {
     return _then(_$InitialImpl(
       isLoading: null == isLoading
@@ -110,10 +110,10 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value.isSuccessorFailrue
           : isSuccessorFailrue // ignore: cast_nullable_to_non_nullable
               as Option<Either<MainFailure, void>>,
-      checkedInModel: freezed == checkedInModel
-          ? _value.checkedInModel
-          : checkedInModel // ignore: cast_nullable_to_non_nullable
-              as CheckedInModel?,
+      updateCountModel: freezed == updateCountModel
+          ? _value.updateCountModel
+          : updateCountModel // ignore: cast_nullable_to_non_nullable
+              as UpdateCountModel?,
     ));
   }
 }
@@ -124,18 +124,18 @@ class _$InitialImpl implements _Initial {
   const _$InitialImpl(
       {required this.isLoading,
       required this.isSuccessorFailrue,
-      required this.checkedInModel});
+      required this.updateCountModel});
 
   @override
   final bool isLoading;
   @override
   final Option<Either<MainFailure, void>> isSuccessorFailrue;
   @override
-  final CheckedInModel? checkedInModel;
+  final UpdateCountModel? updateCountModel;
 
   @override
   String toString() {
-    return 'CheckState(isLoading: $isLoading, isSuccessorFailrue: $isSuccessorFailrue, checkedInModel: $checkedInModel)';
+    return 'CheckState(isLoading: $isLoading, isSuccessorFailrue: $isSuccessorFailrue, updateCountModel: $updateCountModel)';
   }
 
   @override
@@ -147,13 +147,13 @@ class _$InitialImpl implements _Initial {
                 other.isLoading == isLoading) &&
             (identical(other.isSuccessorFailrue, isSuccessorFailrue) ||
                 other.isSuccessorFailrue == isSuccessorFailrue) &&
-            (identical(other.checkedInModel, checkedInModel) ||
-                other.checkedInModel == checkedInModel));
+            (identical(other.updateCountModel, updateCountModel) ||
+                other.updateCountModel == updateCountModel));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, isLoading, isSuccessorFailrue, checkedInModel);
+      Object.hash(runtimeType, isLoading, isSuccessorFailrue, updateCountModel);
 
   @JsonKey(ignore: true)
   @override
@@ -166,14 +166,14 @@ abstract class _Initial implements CheckState {
   const factory _Initial(
       {required final bool isLoading,
       required final Option<Either<MainFailure, void>> isSuccessorFailrue,
-      required final CheckedInModel? checkedInModel}) = _$InitialImpl;
+      required final UpdateCountModel? updateCountModel}) = _$InitialImpl;
 
   @override
   bool get isLoading;
   @override
   Option<Either<MainFailure, void>> get isSuccessorFailrue;
   @override
-  CheckedInModel? get checkedInModel;
+  UpdateCountModel? get updateCountModel;
   @override
   @JsonKey(ignore: true)
   _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>

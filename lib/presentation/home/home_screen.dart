@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:kma_reg/domain/api_calls/models/check_model.dart';
-import 'package:kma_reg/domain/api_calls/models/checked_in_model.dart';
-import 'package:kma_reg/presentation/common_widgets/qr_bottom_sheet.dart';
-import 'package:kma_reg/presentation/core/color.dart';
 import 'package:kma_reg/presentation/core/constants.dart';
 import 'package:kma_reg/presentation/home/wisgets/home_botton.dart';
 import 'package:kma_reg/presentation/qr_scan/qr_scan_screen.dart';
@@ -38,19 +33,20 @@ class HomeScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Image.asset(
-                "assets/kma_logo.png",
-                width: 154.w,
+                "assets/qmark.png",
+                height: 80.h,
+                fit: BoxFit.fitWidth,
               ),
-              kHeight15,
+              kHeight10,
               Text(
-                "Event Registration",
+                "Registration",
                 style: TextStyle(
-                  fontSize: 20.sp,
-                  fontWeight: FontWeight.w500,
+                  fontSize: 24.sp,
+                  fontWeight: FontWeight.w700,
                   color: Color.fromRGBO(83, 83, 83, 1),
                 ),
               ),
-              kHeight15,
+              kHeight25,
               HomeButton(
                 name: "Check-in",
                 onPressed: () {

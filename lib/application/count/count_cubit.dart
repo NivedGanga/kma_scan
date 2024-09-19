@@ -2,8 +2,10 @@ import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:kma_reg/domain/api_calls/I_api_calls_repo.dart';
+import 'package:kma_reg/domain/api_calls/i_api_calls_repo.dart';
+import 'package:kma_reg/domain/api_calls/models/checked_in_model.dart';
 import 'package:kma_reg/domain/api_calls/models/total_check_in.dart';
+import 'package:kma_reg/domain/api_calls/models/update_count_model.dart';
 import 'package:kma_reg/domain/failure/main_failure.dart';
 
 part 'count_state.dart';

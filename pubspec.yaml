@@ -57,6 +57,10 @@ dev_dependencies:
   freezed: ^2.4.5
   injectable_generator: ^2.4.1
 
+flutter_icons:
+ image_path: "assets/app_icon.png"
+ android: true
+ ios: true
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.

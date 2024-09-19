@@ -2,8 +2,9 @@ import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
-import 'package:kma_reg/domain/api_calls/I_api_calls_repo.dart';
+import 'package:kma_reg/domain/api_calls/i_api_calls_repo.dart';
 import 'package:kma_reg/domain/api_calls/models/checked_in_model.dart';
+import 'package:kma_reg/domain/api_calls/models/update_count_model.dart';
 import 'package:kma_reg/domain/checkin_type/check_in_type.dart';
 import 'package:kma_reg/domain/failure/main_failure.dart';
 part 'check_state.dart';
@@ -23,7 +24,7 @@ class CheckCubit extends Cubit<CheckState> {
         state.copyWith(
           isLoading: false,
           isSuccessorFailrue: some(right(null)),
-          checkedInModel: r,
+          updateCountModel: r,
         ),
       );
     });
@@ -38,7 +39,7 @@ class CheckCubit extends Cubit<CheckState> {
         state.copyWith(
           isLoading: false,
           isSuccessorFailrue: some(right(null)),
-          checkedInModel: r,
+          updateCountModel: r,
         ),
       );
     });
